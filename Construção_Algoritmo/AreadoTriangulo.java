@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class PerimetrodaCicunferencia {
+public class AreadoTriangulo {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int base = 0;
@@ -13,6 +13,6 @@ public class PerimetrodaCicunferencia {
         altura = scanner.nextInt();
         area = base*altura/2;
         System.out.println("A área do triângulo com base "+ base + " e altura "+ altura + " É: "+ area);
-        
+        scanner.close();
     }
 }
