@@ -14,5 +14,7 @@ public class QuadradodeNumero {
         num = num *num;
 
         System.out.println("A raiz quadrada do seu número é "+(num));
+
+        scanner.close();
     }
 }
