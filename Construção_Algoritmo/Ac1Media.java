@@ -12,13 +12,13 @@ public class Ac1Media {
         // Entrada das variáveis
         System.out.println("Calculadora de média");
         System.out.println("===============================");
-        System.out.println("Digite sua nota da Ac1: "); Ac1 = scanner.nextDouble();
+        System.out.print("Digite sua nota da Ac1: "); Ac1 = scanner.nextDouble();
         System.out.println("===============================");
-        System.out.println("Digite sua nota da Ac2: "); Ac2 = scanner.nextDouble();
+        System.out.print("Digite sua nota da Ac2: "); Ac2 = scanner.nextDouble();
         System.out.println("===============================");
-        System.out.println("Digite sua nota da Ag: "); Ag = scanner.nextDouble();
+        System.out.print("Digite sua nota da Ag: "); Ag = scanner.nextDouble();
         System.out.println("===============================");
-        System.out.println("Digite sua nota da Af: "); Af = scanner.nextDouble();
+        System.out.print("Digite sua nota da Af: "); Af = scanner.nextDouble();
         System.out.println("===============================");
         // Calculando a média e prova real para garantir que os calculos estão certos
         double media = (Ac1 * 0.15) + (Ac2 * 0.30) + (Ag * 0.10) + (Af * 0.45);
@@ -27,7 +27,14 @@ public class Ac1Media {
         // Saída dos dados
         System.out.println("Nota mínima para aprovação: 5.0");
         System.out.println("===============================");
-        System.out.println("Sua média é "+ media);
+
+        System.out.println("Sua nota Ac1: "+ (Ac1));
+        System.out.println("Sua nota Ac2: "+ (Ac2));
+        System.out.println("Sua nota Ag: "+ (Ag));
+        System.out.println("Sua nota Af: "+ (Af));
+
+        System.out.println("===============================");
+        System.out.printf("Sua média é %.1f%n ", media);
         System.out.println("===============================");
         
         if (media >= 5){
