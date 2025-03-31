@@ -35,7 +35,7 @@ public class Ac1Media {
 
         System.out.println("===============================");
         System.out.printf("Sua média é %.1f%n ", media);
-        System.out.println("===============================");
+        System.out.println("================================");
         
         if (media >= 5){
             System.out.println("Status: Aprovado!");
