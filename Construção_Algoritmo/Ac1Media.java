@@ -38,7 +38,7 @@ public class Ac1Media {
         System.out.println("Sua nota Af: "+ (notaAf));
 
         System.out.println("===============================");
-        System.out.printf("Sua média é %.1f%n ", media);
+        System.out.printf("Sua média é %.1f%n", media);
         System.out.println("================================");
         
         if (media >= notaNm){
