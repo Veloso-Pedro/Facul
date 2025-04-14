@@ -23,7 +23,12 @@ public class CalculadoraSimples {
             }else if (esc == 3){
                 System.out.println("A Mulplicação é "+ (num1 * num2));
             }else if (esc == 4){
-                System.out.println("A Divisão é "+ (num1 / num2));
+                if (num2 == 0){
+                    System.out.println("ERRO");
+                }else {
+                    System.out.println("A Divisão é "+ (num1 / num2));
+                }
+                
             }
             scn.close();
         }

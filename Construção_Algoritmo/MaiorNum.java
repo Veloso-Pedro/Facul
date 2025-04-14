@@ -11,8 +11,10 @@ public class MaiorNum {
 
         if (num1 > num2){
             System.out.println(num1 +" é maior que "+ num2 );
-        }else{
+        }else if (num1 < num2){
             System.out.println(num2+ " é maior que "+ num1);
+        }else{
+            System.out.println("Números iguais!!");
         }
         scn.close();
     }
