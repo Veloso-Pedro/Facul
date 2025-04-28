@@ -1,3 +1,4 @@
+package Aula1e2;
 public class ComoFazerUmSanduiche{
     public static void main(String[]args){
       System.out.println("O que vai precisar na mesa:");

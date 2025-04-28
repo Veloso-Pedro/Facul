@@ -1,3 +1,4 @@
+package Aula1e2;
 import java.util.Scanner;
 
 public class Somar2Numeros {

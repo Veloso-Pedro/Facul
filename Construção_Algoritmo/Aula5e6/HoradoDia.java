@@ -1,3 +1,4 @@
+package Aula5e6;
 import java.util.Scanner;
 
 public class HoradoDia {
