@@ -2,7 +2,7 @@ package Aula5e6;
 import java.util.Scanner;
 
 public class DiadaSemana {
-    public static void main(String[] args) {
+    public static void mostrar() {
         Scanner s = new Scanner(System.in);
 
         System.out.println("Digite um número de 1 a 7: ");

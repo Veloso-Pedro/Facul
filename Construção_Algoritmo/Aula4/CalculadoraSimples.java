@@ -2,7 +2,7 @@ package Aula4;
 import java.util.Scanner;
 
 public class CalculadoraSimples {   
-    public static void main(String[] args){
+    public static void mostrar(){
         Scanner scn = new Scanner(System.in);
 
         System.out.println("Calculadora Simples:");

@@ -2,7 +2,7 @@ package Aula3;
 import java.util.Scanner;
 
 public class QuadradodeNumero {
-    public static void main(String[] args) {
+    public static void mostrar() {
         Scanner scanner = new Scanner(System.in);
 
         int num = 0;

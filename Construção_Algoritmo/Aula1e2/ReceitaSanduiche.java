@@ -1,6 +1,6 @@
 package Aula1e2;
 public class ReceitaSanduiche {
-    public static void main(String[] arg){
+    public static void mostrar(){
         System.out.println("*Sacola de pão de forma em mãos");
         System.out.println("*pote de presunto e queijo em mãos");
         System.out.println("1° Abrir o saco de pão de forma");

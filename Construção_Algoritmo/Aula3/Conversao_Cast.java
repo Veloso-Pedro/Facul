@@ -1,7 +1,7 @@
 package Aula3;
 public class Conversao_Cast {
 
-    public static void main(String[] arg){
+    public static void mostrar(){
         
         int x = 10;
         int y = 6; int z =3;

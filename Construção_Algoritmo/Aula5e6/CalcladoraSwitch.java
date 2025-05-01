@@ -2,7 +2,7 @@ package Aula5e6;
 import java.util.Scanner;
 
 public class CalcladoraSwitch {
-    public static void main(String[] args) {
+    public static void mostrar() {
         Scanner scn = new Scanner(System.in);
 
         System.out.println("Calculadora");

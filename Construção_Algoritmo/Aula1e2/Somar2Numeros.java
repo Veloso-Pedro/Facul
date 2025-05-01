@@ -2,7 +2,7 @@ package Aula1e2;
 import java.util.Scanner;
 
 public class Somar2Numeros {
-    public static void main(String[] args) {
+    public static void mostrar() {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Calculadora de dois números");

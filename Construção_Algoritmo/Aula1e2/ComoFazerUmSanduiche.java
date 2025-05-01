@@ -1,6 +1,6 @@
 package Aula1e2;
 public class ComoFazerUmSanduiche{
-    public static void main(String[]args){
+    public static void mostrar(){
       System.out.println("O que vai precisar na mesa:");
       System.out.println("*Um saco de pão de forma");
       System.out.println("*Um pote de pasta de amendoim");

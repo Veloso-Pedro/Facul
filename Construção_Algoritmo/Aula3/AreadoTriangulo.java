@@ -2,7 +2,7 @@ package Aula3;
 import java.util.Scanner;
 
 public class AreadoTriangulo {
-    public static void main(String[] args) {
+    public static void mostrar() {
         Scanner scanner = new Scanner(System.in);
         int base = 0;
         int altura = 0;

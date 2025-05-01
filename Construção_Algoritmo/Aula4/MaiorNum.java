@@ -2,7 +2,7 @@ package Aula4;
 import java.util.Scanner;
 
 public class MaiorNum {
-    public static void main(String[] args) {
+    public static void mostrar() {
         Scanner scn = new Scanner(System.in);
 
         System.out.println("Digite o primeiro número: ");

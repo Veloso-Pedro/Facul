@@ -2,7 +2,7 @@ package Aula5e6;
 import java.util.Scanner;
 
 public class HoradoDia {
-    public static void main(String[] args) {
+    public static void mostrar() {
         Scanner s = new Scanner(System.in);
 
         System.out.println("Digite a hora atual (1-24): ");
