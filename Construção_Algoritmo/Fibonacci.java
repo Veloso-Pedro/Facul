@@ -4,25 +4,26 @@ public class Fibonacci {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
 
-        int inicio0 = 0;
-        int inicio1 = 1;
-        
-        
+        int f1 = 0;
+        int f2 = 1;
 
         System.out.println("Digite até que termo você deseja ver da Sequencia de Fibonacci: ");
         int n = s.nextInt();
 
-        for (int i = 0; i <= n - 1; i++){
-            
-            if (i == 0){
-                System.out.println(i);
+        for (int i = 0; i <= n - 2; i++){
+            if (n < 2) {
+                System.out.println(n);
+            }else {
+                
+                int fib = f1 + f2;
+                f1 = f2;
+                f2 = fib;
+    
+                System.out.println(fib);
             }
-            int fib = inicio0 + inicio1;
-            inicio0 = inicio1;
-            inicio1 = fib;
-
-            System.out.println(inicio0);
         }
+
+        
         s.close();
     }
 }
