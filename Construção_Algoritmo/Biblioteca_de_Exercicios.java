@@ -142,5 +142,7 @@ public class Biblioteca_de_Exercicios {
                 break;
         }
       }while(escL != 0);
+
+      s.close();
     }
 }
