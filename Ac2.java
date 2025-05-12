@@ -22,7 +22,7 @@ public class Ac2 {
         int esc = 0; // Variável da Escolha do Usuario 
 
         // Entrada das Novas Variáveis (Ac2)
-        do {
+        do { // Loop para garantir que os pesos vão respeitar a soma dos pesos
             System.out.println("Calculadora de média");
             System.out.println("===============================");
             System.out.println("Entrada dos Pesos (Apenas Números inteiros)");
@@ -56,7 +56,7 @@ public class Ac2 {
             System.out.println("===============================");
             System.out.print("Digite sua nota da Af: "); notaAf = scanner.nextDouble();
             System.out.println("===============================");
-            do {
+            do { // Loop Interno para garantir que a nota mínima vai ser maior que 3
                 System.out.print("Digite a nota mínima para aprovação (maior que 3): ");
                 notaNm = scanner.nextDouble();
                 if (notaNm < 3) {
