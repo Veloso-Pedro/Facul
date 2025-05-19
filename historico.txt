@@ -22,3 +22,9 @@ Situação: Aprovado
 Média calculada: 8,4
 Situação: Aprovado
 --------------------------
+Média calculada: 6,2
+Situação: Aprovado
+--------------------------
+Média calculada: 6,3
+Situação: Aprovado
+--------------------------
