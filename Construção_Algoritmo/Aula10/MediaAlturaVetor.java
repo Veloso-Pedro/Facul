@@ -2,27 +2,26 @@ package Aula10;
 
 import java.util.Scanner;
 
-public class Media5Num {
+public class MediaAlturaVetor {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        int[] Numeros = new int[5];
-        int somador = 0;
+        Double[] Numeros = new Double[5];
+        Double somador = 0.0;
 
 
-        System.out.println("Apenas Números Inteiros!!");
+        System.out.println("Alturas em Metros");
         System.out.println("==============================");
         for(int i =  0; i < Numeros.length;i ++){
-            System.out.println("Digite o "+ (i + 1)+"° número: ");
-            Numeros[i] = s.nextInt();
+            System.out.println("Digite o "+ (i + 1)+"° Altura: ");
+            Numeros[i] = s.nextDouble();
         }
 
         for(int i = 0; i < Numeros.length; i ++){
             somador += Numeros[i];
         }
 
-        System.out.println("A média dos números inseridos é: "+ (somador/5));
+        System.out.print("A média dos números inseridos é: "+ (somador/5.00));
 
         s.close();
     }
-    
 }
