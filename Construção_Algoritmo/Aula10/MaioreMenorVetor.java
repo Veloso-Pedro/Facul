@@ -27,6 +27,8 @@ public class MaioreMenorVetor {
         System.out.println("Maior: "+Maior);
         System.out.println("Menor: "+ Menor);
 
+        s.close();
+
 
     }
 }

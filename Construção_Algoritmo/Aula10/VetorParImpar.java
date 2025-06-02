@@ -31,6 +31,8 @@ public class VetorParImpar {
         System.out.println("A Quantidade de Pares no vetor são: "+pares);
         System.out.println("A Quantidade de Impares no vetor são "+impares);
 
+        s.close();
+
 
     }
 }
