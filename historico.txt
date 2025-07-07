@@ -1,0 +1,12 @@
+Média calculada: 6,3
+Situação: Aprovado
+--------------------------
+Média calculada: 5,9
+Situação: Aprovado
+--------------------------
+Média calculada: 5,5
+Situação: Aprovado
+--------------------------
+Média calculada: 5,0
+Situação: Aprovado
+--------------------------
