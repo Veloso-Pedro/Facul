@@ -8,7 +8,7 @@ public class Revisao {
         boolean[][] quadroDeReservas = new boolean[qtdSalas][qtdSlots];
         String continuar = " ";
         int salaEscolida;
-        int indiceSalaEscolhida = - 1; int indiceSlot = -1;
+        //int indiceSalaEscolhida = - 1; int indiceSlot = -1;
 
         do {
             do {
@@ -16,7 +16,7 @@ public class Revisao {
                 salaEscolida = s.nextInt();
             } while (salaEscolida < 1 || salaEscolida > 3);
 
-            for(int slot)
+            //for(int slot)
 
 
 
