@@ -19,8 +19,6 @@ public class Revisao {
             //for(int slot)
 
 
-
-
             System.out.println("Dseja cotinuar? (s- sim): ");
             continuar = s.next();
         } while (continuar.toLowerCase().equals("s"));
