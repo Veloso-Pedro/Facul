@@ -45,6 +45,15 @@ public class ListaExercicio1 {
         return pot;
     }
 
+    public int fatorial(int numFatorial){
+        int novoNum = 1;
+        for (int i = 1; i <= numFatorial; i++){
+        
+            novoNum *= i;
+        }
+        return novoNum;
+    }
+
     
 
     public static void main(String[] args) {
@@ -60,6 +69,7 @@ public class ListaExercicio1 {
             System.out.println("3- Conversão de Minutos para Horas");
             System.out.println("4- classificação de Números");
             System.out.println("5- Potência");
+            System.out.println("6- Fatorial");
             System.out.println("0- Sair!!");
 
             escolha = s.nextInt();
@@ -130,6 +140,17 @@ public class ListaExercicio1 {
                     double pot = t5.pot(base, exp);
 
                     System.out.println("A potencia é " + pot);
+
+                    System.out.println("============================");
+                    break;
+
+                case 6:
+                    System.out.println("Digite um número: ");
+                    int numF = s.nextInt();
+
+                    ListaExercicio1 t6 = new ListaExercicio1();
+                    int respostaf = t6.fatorial(numF);
+                    System.out.println(numF + " fatorial é " + respostaf);
 
                     System.out.println("============================");
                     break;
