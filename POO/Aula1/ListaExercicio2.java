@@ -50,11 +50,9 @@ public class ListaExercicio2 {
 
         private LocalDate validarData(String dataTexto) {
             try {
-                // Formato dd/MM/yyyy
                 DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
                 LocalDate data = LocalDate.parse(dataTexto, formatter);
 
-                // Comparador: não pode ser no futuro
                 if (data.isAfter(LocalDate.now())) {
                     throw new IllegalArgumentException("Data de nascimento não pode ser no futuro!");
                 }
@@ -65,7 +63,6 @@ public class ListaExercicio2 {
             }
         }
 
-        // Converter data para Epoch (segundos)
         public long getDataNascimentoEpoch() {
             return this.dataN.atStartOfDay(ZoneId.systemDefault()).toEpochSecond();
         }
