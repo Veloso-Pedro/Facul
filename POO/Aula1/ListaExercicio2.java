@@ -8,8 +8,8 @@ public class ListaExercicio2 {
 
         System.out.println("==========================================================");
 
-        Pessoa people = new Pessoa("Carlos", "Lima", "22/08/2025");
+        Pessoa people = new Pessoa();
 
-        System.out.println(people.descricao());
+       
     } 
 }
