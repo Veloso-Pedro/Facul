@@ -1,4 +1,5 @@
 
+
 public class ListaExercicio2 {
     public static void main(String[] args) {
         Produto p1 = new Produto("Camiseta", "Nike", 15.50, 65.00);
@@ -8,7 +9,7 @@ public class ListaExercicio2 {
 
         System.out.println("==========================================================");
 
-        Pessoa people = new Pessoa();
+        
 
        
     } 

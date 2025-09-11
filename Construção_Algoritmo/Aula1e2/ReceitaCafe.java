@@ -1,4 +1,5 @@
 package Aula1e2;
+
 public class ReceitaCafe {
     public static void mostrar() {
         System.out.println("Início");
