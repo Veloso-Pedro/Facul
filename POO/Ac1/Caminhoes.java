@@ -12,6 +12,19 @@ public class Caminhoes extends Veiculos {
 
     }
 
+    public boolean ValidarQtdEixos(){
+        boolean qtdEixosValido = false;
+
+        if(qtdEixos >= 9){
+            qtdEixosValido = true;
+            System.out.println("Quantidade de eixos validos!!!");
+        }else{
+            System.out.println("Quantidade de eixos invalido!!!");
+        }
+
+        return qtdEixosValido;
+    }
+
     //* Getters 
     public int getQtdEixos() {
         return qtdEixos;
