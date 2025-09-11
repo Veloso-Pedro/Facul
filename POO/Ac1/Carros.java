@@ -11,16 +11,26 @@ public class Carros extends Veiculos {
 
     }
 
+    public String descricaoCarros(){
+        return
+            "Modelo: " + this.getModelo() + "\n" +
+            "Montadora: " + this.getMontadora() + "\n" +
+            "Placa: " + this.getPlaca() + "\n" +
+            "Placa valida: " +this.ValidarPlaca()+ "\n" +
+            "Potencia: " +this.getPotencia()+ " CV" + "\n" +
+            "Quantidade de portas: " +this.getQtdPortas()+ "\n" +
+            "Quantidade de portas valida: " +this.validarPortas()+ "\n";
 
-    public boolean ValidarPortas(){
+
+    }
+
+
+    public boolean validarPortas(){
         boolean portasValidas = false;
 
         
-        if( qtdPortas > 4){
-            System.out.println("Quantidade de portas invalida!!");
-        }else{
+        if( qtdPortas <= 4){
             portasValidas = true;
-            System.out.println("Quantidade de Portas Validas!!");
         }
 
         return portasValidas;
@@ -28,11 +38,11 @@ public class Carros extends Veiculos {
 
     //* Getters
     public int getQtdPortas() {
-        return qtdPortas;
+        return this.qtdPortas;
     }
 
     public int getPotencia() {
-        return potencia;
+        return this.potencia;
     }
 
     //* Setters 

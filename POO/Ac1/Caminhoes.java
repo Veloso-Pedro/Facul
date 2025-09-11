@@ -12,26 +12,45 @@ public class Caminhoes extends Veiculos {
 
     }
 
-    public boolean ValidarQtdEixos(){
+    public String descricaoCaminhoes(){
+        return
+            "Modelo: " + this.getModelo() + "\n" +
+            "Montadora: " + this.getMontadora() + "\n" +
+            "Placa: " + this.getPlaca() + "\n" +
+            "Placa Valida: " +this.ValidarPlaca()+ "\n" +
+            "Quantidade de eixos: " +this.getQtdEixos()+ "\n" +
+            "Quantidade de eixos valido: " +this.validarQtdEixos()+ "\n" +
+            "Quantidade de carga maxima: "+this.getCargaMax()+ " Toneladas" + "\n" +
+            "Quantidade de carga maxima valida: " +this.validarCargaMax()+ "\n";
+
+
+    }
+
+    public boolean validarQtdEixos(){
         boolean qtdEixosValido = false;
 
-        if(qtdEixos >= 9){
+        if(qtdEixos <= 9){
             qtdEixosValido = true;
-            System.out.println("Quantidade de eixos validos!!!");
-        }else{
-            System.out.println("Quantidade de eixos invalido!!!");
         }
-
         return qtdEixosValido;
+    }
+
+     public boolean validarCargaMax(){
+        boolean cargaMaxValido = false;
+
+        if(qtdEixos <= 74){
+            cargaMaxValido = true;
+        }
+        return cargaMaxValido;
     }
 
     //* Getters 
     public int getQtdEixos() {
-        return qtdEixos;
+        return this.qtdEixos;
     }
 
     public int getCargaMax() {
-        return cargaMax;
+        return this.cargaMax;
     }
 
     //* Setters 

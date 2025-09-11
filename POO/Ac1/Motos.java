@@ -9,9 +9,19 @@ public class Motos extends Veiculos {
         
     }
 
+    public String descricaoMoto(){
+        return
+            "Modelo: " + this.getModelo() + "\n" +
+            "Montadora: " + this.getMontadora() + "\n" +
+            "Placa: " + this.getPlaca() + "\n" +
+            "Placa Valida: " +this.ValidarPlaca()+ "\n" +
+            "Cilindradas: "+this.getCilindradas()+ " CC" + "\n";
+
+    }
+
     //* Getters
     public int getCilindradas() {
-        return cilindradas;
+        return this.cilindradas;
     }
 
     //* Setters

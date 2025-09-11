@@ -15,9 +15,10 @@ public class Veiculos {
 
     public String descricaoVeiculo(){
         return
-            "Modelo: " + getModelo() + "\n" +
-            "Montadora: " + getMontadora() + "\n" +
-            "Placa: " + getPlaca() + "\n";
+            "Modelo: " + this.getModelo() + "\n" +
+            "Montadora: " + this.getMontadora() + "\n" +
+            "Placa: " + this.getPlaca() + "\n" +
+            "Placa Valida: " +this.ValidarPlaca()+ "\n";
     }
     
 
@@ -31,9 +32,7 @@ public class Veiculos {
 
         if (this.getPlaca().matches(regex)){
             placaValida = true;
-            System.out.println("Placa válida!!");
-        }else{
-            System.out.println("Placa Invalida!!");
+            
         }
 
         return placaValida;
@@ -41,15 +40,15 @@ public class Veiculos {
 
     //* Getters
     public String getModelo() {
-        return modelo;
+        return this.modelo;
     }
 
     public String getMontadora() {
-        return montadora;
+        return this.montadora;
     }
 
     public String getPlaca() {
-        return placa;
+        return this.placa;
     }
 
     //* Setters
