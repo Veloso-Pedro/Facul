@@ -3,12 +3,23 @@ package POO.Ac1;
 public class Carros extends Veiculos {
     protected int qtdPortas;
     protected int potencia;
+    protected String cambio;
+    protected boolean freioABS;
+    protected boolean kitCamera;
 
-    Carros(String modelo, String montadora, String placa, int qtdPortas, int potencia){
+    Carros(String modelo, String montadora, String placa, int qtdPortas, int potencia, String cambio, boolean freioABS, boolean kitCamera){
         super(modelo, montadora, placa);
-        this.setQtdPortas(qtdPortas);
-        this.setPotencia(potencia);
+        this.validarPortas(this.setQtdPortas(qtdPortas));
+        this.validarPotencia(this.setPotencia(potencia));
+        this.setCambio(cambio);
+        this.setFreioABS(freioABS);
+        this.setKitCamera(kitCamera);
 
+    }
+
+    //* Construtor Padrão
+    Carros(String modelo, String montadora, String placa, int qtdPortas, int potencia, String cambio){
+        this( modelo,  montadora, placa,  qtdPortas,  potencia,  cambio, false, false);
     }
 
     public String descricaoCarros(){
@@ -16,24 +27,28 @@ public class Carros extends Veiculos {
             "Modelo: " + this.getModelo() + "\n" +
             "Montadora: " + this.getMontadora() + "\n" +
             "Placa: " + this.getPlaca() + "\n" +
-            "Placa valida: " +this.ValidarPlaca()+ "\n" +
-            "Potencia: " +this.getPotencia()+ " CV" + "\n" +
-            "Quantidade de portas: " +this.getQtdPortas()+ "\n" +
-            "Quantidade de portas valida: " +this.validarPortas()+ "\n";
+            "Placa valida: " + this.ValidarPlaca(this.getPlaca())+ "\n" +
+            "Potencia: " + this.getPotencia() + " CV" + "\n" +
+            "Quantidade de portas: " + this.getQtdPortas() + "\n" +
+            "Cambio: " + this.getCambio() + "\n" +
+            "Freio ABS: " + this.getFreioABS() + "\n" +
+            "Kit de Cameras: " + this.getKitCamera() + "\n"; 
 
 
     }
 
 
-    public boolean validarPortas(){
-        boolean portasValidas = false;
-
+    public void validarPortas(int p){
         
-        if( qtdPortas <= 4){
-            portasValidas = true;
+        if (p > 4){
+            throw new IllegalArgumentException("O maximo de portas é quatro!");
         }
+    }
 
-        return portasValidas;
+    public void validarPotencia(int p) {
+        if (p <= 0) {
+            throw new IllegalArgumentException("A potencia não pode ser neegativa! nem zero!");
+        }
     }
 
     //* Getters
@@ -45,12 +60,36 @@ public class Carros extends Veiculos {
         return this.potencia;
     }
 
-    //* Setters 
-    public void setQtdPortas(int qtdPortas) {
-        this.qtdPortas = qtdPortas;
+    public String getCambio() {
+        return this.cambio;
     }
 
-    public void setPotencia(int potencia) {
-        this.potencia = potencia;
+    public boolean getFreioABS() {
+        return this.freioABS;
+    }
+
+    public boolean getKitCamera() {
+        return this.kitCamera;
+    }
+
+    //* Setters 
+    public int setQtdPortas(int qtdPortas) {
+        return this.qtdPortas = qtdPortas;
+    }
+
+    public int setPotencia(int potencia) {
+        return this.potencia = potencia;
+    }
+
+    public void setCambio(String cambio) {
+        this.cambio = cambio.toUpperCase();
+    }
+
+    public void setFreioABS(boolean freioABS) {
+        this.freioABS = freioABS;
+    } 
+
+    public void setKitCamera(boolean kitCamera) {
+        this.kitCamera = kitCamera;
     }
 }
