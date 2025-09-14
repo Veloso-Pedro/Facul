@@ -7,8 +7,8 @@ public class Caminhoes extends Veiculos {
     protected boolean luzLateral = false;
     protected boolean lona = false;
 
-    Caminhoes(String modelo, String montadora, String placa, int qtdEixos, int cargaMax, boolean faixaRefletiva, boolean luzLateral, boolean lona){
-        super(modelo, montadora, placa);
+    Caminhoes(String modelo, String montadora, String placa, String ano, String cor, double valor, int qtdEixos, int cargaMax, boolean faixaRefletiva, boolean luzLateral, boolean lona){
+        super(modelo,montadora, placa, ano, cor, valor);
         this.validarQtdEixos(this.setQtdEixos(qtdEixos));
         this.validarCargaMax(this.setCargaMax(cargaMax));
         this.setFaixaRefletiva(faixaRefletiva);
@@ -19,8 +19,8 @@ public class Caminhoes extends Veiculos {
     }
 
     //* Construtor Padrão
-    Caminhoes(String modelo, String montadora, String placa, int qtdEixos, int cargaMax){
-        this( modelo,  montadora,  placa,  qtdEixos,  cargaMax, false, false, false);
+    Caminhoes(String modelo, String montadora, String placa, String ano, String cor, double valor, int qtdEixos, int cargaMax){
+        this( modelo,  montadora,  placa, ano,  cor,  valor,  qtdEixos,  cargaMax, false, false, false);
     }
 
     public String descricaoCaminhoes(){
@@ -29,6 +29,9 @@ public class Caminhoes extends Veiculos {
             "Montadora: " + this.getMontadora() + "\n" +
             "Placa: " + this.getPlaca() + "\n" +
             "Placa Valida: " + this.ValidarPlaca(this.getPlaca()) + "\n" +
+            "Ano: " + this.getAno() + "\n" +
+            "Cor: " + this.getCor() + "\n" +
+            "Valor: R$ " + String.format("%.2f", this.getValor()) +  "\n" +
             "Quantidade de eixos: " + this.getQtdEixos() + "\n" +
             "Quantidade de carga maxima: "+ this.getCargaMax() + " Toneladas" + "\n" +
             "Faixa Refletiva: " + this.getFaixaRefletiva() + "\n" +

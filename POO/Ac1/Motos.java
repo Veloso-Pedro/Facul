@@ -6,8 +6,8 @@ public class Motos extends Veiculos {
     protected boolean alarme = false;
     protected boolean bau = false;
 
-    Motos(String modelo, String montadora, String placa, int cilindradas, boolean protetorMotor, boolean alarme, boolean bau){
-        super(modelo,montadora, placa);
+    Motos(String modelo, String montadora, String placa, String ano, String cor, double valor, int cilindradas, boolean protetorMotor, boolean alarme, boolean bau){
+        super(modelo,montadora, placa, ano, cor, valor);
         this.validarCilindradas(this.setCilindradas(cilindradas));
         this.setProtetorMotor(protetorMotor);
         this.setAlarme(alarme);
@@ -16,8 +16,8 @@ public class Motos extends Veiculos {
     }
 
     //* Construtor Padrão
-    Motos(String modelo, String montadora, String placa, int cilindradas){
-        this( modelo,  montadora,  placa,  cilindradas, false, false, false);
+    Motos(String modelo, String montadora, String placa, String ano, String cor, double valor, int cilindradas){
+        this( modelo,  montadora,  placa, ano, cor, valor, cilindradas, false, false, false);
     }
 
     public String descricaoMotos(){
@@ -26,6 +26,9 @@ public class Motos extends Veiculos {
             "Montadora: " + this.getMontadora() + "\n" +
             "Placa: " + this.getPlaca() + "\n" +
             "Placa Valida: " + this.ValidarPlaca(this.getPlaca())+ "\n" +
+            "Ano: " + this.getAno() + "\n" +
+            "Cor: " + this.getCor() + "\n" +
+            "Valor: R$ " + String.format("%.2f",this.getValor()) +  "\n" +
             "Cilindradas: "+ this.getCilindradas()+ " CC" + "\n" + 
             "Protetor de Motor: " + this.getProtetorMotor()+ "\n" +
             "Alarme: " + this.getAlarme() + "\n" +
