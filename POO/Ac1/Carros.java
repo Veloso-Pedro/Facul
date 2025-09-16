@@ -9,8 +9,8 @@ public class Carros extends Veiculos {
 
     Carros(String modelo, String montadora, String placa, String ano, String cor, double valor, int qtdPortas, int potencia, String cambio, boolean freioABS, boolean kitCamera){
         super(modelo,montadora, placa, ano, cor, valor);
-        this.validarPortas(this.setQtdPortas(qtdPortas));
-        this.validarPotencia(this.setPotencia(potencia));
+        this.setQtdPortas(qtdPortas);
+        this.setPotencia(potencia);
         this.setCambio(cambio);
         this.setFreioABS(freioABS);
         this.setKitCamera(kitCamera);
@@ -41,19 +41,6 @@ public class Carros extends Veiculos {
     }
 
 
-    public void validarPortas(int p){
-        
-        if (p > 4){
-            throw new IllegalArgumentException("O maximo de portas é quatro!");
-        }
-    }
-
-    public void validarPotencia(int p) {
-        if (p <= 0) {
-            throw new IllegalArgumentException("A potencia não pode ser neegativa! nem zero!");
-        }
-    }
-
     //* Getters
     public int getQtdPortas() {
         return this.qtdPortas;
@@ -77,10 +64,20 @@ public class Carros extends Veiculos {
 
     //* Setters 
     public int setQtdPortas(int qtdPortas) {
+        
+        if (qtdPortas > 4){
+            throw new IllegalArgumentException("O maximo de portas é quatro!");
+        }
+        
         return this.qtdPortas = qtdPortas;
     }
 
     public int setPotencia(int potencia) {
+        
+        if (potencia <= 0) {
+            throw new IllegalArgumentException("A potencia não pode ser neegativa! nem zero!");
+        }
+        
         return this.potencia = potencia;
     }
 

@@ -30,10 +30,6 @@ public class Veiculos {
             "Cor: " + this.getCor() + "\n" +
             "Valor: R$ " + String.format("%.2f",this.getValor()) +  "\n";
     }
-    
-
-    
-
 
     public boolean ValidarPlaca(String i){
         boolean placaValida = false;
@@ -111,6 +107,4 @@ public class Veiculos {
     public void setValor(double valor) {
         this.valor = valor;
     }
-
-
 }

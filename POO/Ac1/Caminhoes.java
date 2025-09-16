@@ -9,8 +9,8 @@ public class Caminhoes extends Veiculos {
 
     Caminhoes(String modelo, String montadora, String placa, String ano, String cor, double valor, int qtdEixos, int cargaMax, boolean faixaRefletiva, boolean luzLateral, boolean lona){
         super(modelo,montadora, placa, ano, cor, valor);
-        this.validarQtdEixos(this.setQtdEixos(qtdEixos));
-        this.validarCargaMax(this.setCargaMax(cargaMax));
+        this.setQtdEixos(qtdEixos);
+        this.setCargaMax(cargaMax);
         this.setFaixaRefletiva(faixaRefletiva);
         this.setLuzLateral(luzLateral);
         this.setLona(lona);
@@ -39,19 +39,6 @@ public class Caminhoes extends Veiculos {
             "Lona: " + this.getLona() + "\n";
     }
 
-    public void validarQtdEixos(int i){
-       
-        if(i > 9) {
-            throw new IllegalArgumentException("A Quantidade maxima de eixos permitido por lei é 9!");
-        }
-    }
-
-     public void validarCargaMax(int i){
-
-        if(i > 74){
-            throw new IllegalArgumentException("A Quantidade maxima de peso permitido por lei é 74 toneladas");
-        } 
-    }
 
     //* Getters 
     public int getQtdEixos() {
@@ -76,10 +63,20 @@ public class Caminhoes extends Veiculos {
 
     //* Setters 
     public int setQtdEixos(int qtdEixos) {
+        
+        if(qtdEixos > 9) {
+            throw new IllegalArgumentException("A Quantidade maxima de eixos permitido por lei é 9!");
+        }
+        
         return this.qtdEixos = qtdEixos;
     }
 
     public int setCargaMax(int cargaMax) {
+        
+        if(cargaMax > 74){
+            throw new IllegalArgumentException("A Quantidade maxima de peso permitido por lei é 74 toneladas");
+        } 
+        
         return this.cargaMax = cargaMax;
     }
 

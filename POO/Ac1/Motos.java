@@ -8,7 +8,7 @@ public class Motos extends Veiculos {
 
     Motos(String modelo, String montadora, String placa, String ano, String cor, double valor, int cilindradas, boolean protetorMotor, boolean alarme, boolean bau){
         super(modelo,montadora, placa, ano, cor, valor);
-        this.validarCilindradas(this.setCilindradas(cilindradas));
+        this.setCilindradas(cilindradas);
         this.setProtetorMotor(protetorMotor);
         this.setAlarme(alarme);
         this.setBau(bau);
@@ -36,11 +36,6 @@ public class Motos extends Veiculos {
 
     }
 
-    public void validarCilindradas(int i) {
-        if (i < 50){
-            throw new IllegalArgumentException("Cilindrada não pode ser menor que 50");
-        }
-    }
 
     //* Getters
     public int getCilindradas() {
@@ -61,6 +56,11 @@ public class Motos extends Veiculos {
 
     //* Setters
     public int setCilindradas(int cilindradas) {
+        
+        if (cilindradas < 50){
+            throw new IllegalArgumentException("Cilindrada não pode ser menor que 50");
+        }
+        
         return this.cilindradas = cilindradas;
     }
 
