@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pontos de Coleta de Óleo – Sorocaba</title>
+  <meta name="description" content="Encontre pontos de coleta de óleo de cozinha usado em Sorocaba e saiba como descartar corretamente." />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav" role="navigation" aria-label="Navegação principal">
+    <a class="brand" href="#top" aria-label="Página inicial">
+      <span class="logo" aria-hidden="true">♻️</span>
+      <span>Coleta de Óleo – Sorocaba</span>
+    </a>
+    <nav class="menu" aria-label="Seções">
+      <a href="#pontos">Pontos</a>
+      <a href="#mapa">Mapa</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#indicar">Indicar ponto</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero wrap">
+    <h1>Descarte seu óleo usado corretamente em Sorocaba</h1>
+    <p>Veja pontos e iniciativas locais que recebem óleo de cozinha usado. O mapa abaixo já está visível por padrão.</p>
+  </section>
+
+  <!-- MAPA (sempre visível) -->
+  <section id="mapa" class="wrap">
+    <p class="stitle">Localização</p>
+    <h2 class="shead">Mapa de Sorocaba</h2>
+    <p class="muted">O mapa está centrado na região central de Sorocaba. Para focar em outro bairro, altere os parâmetros da URL no <code>src</code> do iframe.</p>
+    <!-- DICA: para usar um marcador único, mantenha &marker=LAT%2CLON na URL.
+         Com HTML puro, o embed do OpenStreetMap permite apenas 1 marcador.
+         Para vários marcadores, considere uMap (OpenStreetMap) ou integrar JS futuramente. -->
+    <iframe class="map" title="Mapa de Sorocaba (OpenStreetMap)" loading="lazy"
+      src="https://www.openstreetmap.org/export/embed.html?bbox=-47.520%2C-23.570%2C-47.370%2C-23.440&layer=mapnik&marker=-23.50167%2C-47.45806"></iframe>
+  </section>
+
+  <!-- PONTOS (com exemplos reais/curados e espaço para adicionar mais) -->
+  <section id="pontos" class="wrap">
+    <p class="stitle">Pontos e iniciativas</p>
+    <h2 class="shead">Locais parceiros e programas</h2>
+
+    <div class="grid cols-3">
+      <!-- EXEMPLO 1: Iniciativa confirmada em Sorocaba (Óleo do Bem) -->
+      <article class="card">
+        <span class="chip">Programa</span>
+        <h3>Projeto Óleo do Bem (TV TEM)</h3>
+        <p class="meta">Sorocaba/SP — Pontos de troca de óleo usado por sabão ecológico (locais variam).</p>
+        <p class="muted">Confira pontos ativos no site do projeto ou perfis oficiais.</p>
+        <p><a href="https://oleodobem.com/projeto-oleo-do-bem-chega-a-sorocaba-confira-os-pontos-de-coleta/" target="_blank" rel="noopener">Ver anúncio do projeto</a></p>
+      </article>
+
+      <!-- EXEMPLO 2: Empresa que opera coleta/região -->
+      <article class="card">
+        <span class="chip">Empresa</span>
+        <h3>H2O Sustentável – coleta de óleo</h3>
+        <p class="meta">Sorocaba/SP — logística reversa de óleo usado (coletas por agendamento).</p>
+        <p class="muted">Para residências, verifique disponibilidade e orientações.</p>
+        <p><a href="https://reciclagem.h2osustentavel.com.br/reciclagens/coleta-de-oleos/logistica-reversa/coleta-de-oleo-sorocaba" target="_blank" rel="noopener">Saiba mais</a></p>
+      </article>
+
+      <!-- EXEMPLO 3: Ecoponto listado em bases públicas (verificar aceite de óleo de cozinha) -->
+      <article class="card">
+        <span class="chip">Ecoponto</span>
+        <h3>Ecoponto Cajuru (Sorocaba)</h3>
+        <p class="meta">Rua Mário Monteiro de Carvalho, s/n — Cajuru, Sorocaba/SP</p>
+        <p class="muted">Horários: Seg–Sex 7h–17h; Sáb 7h–12h. <em>Verifique se aceita óleo de cozinha</em> antes de levar.</p>
+        <p><a href="https://mapa.abrecon.org.br/ecoponto/940/ecoponto-cajuru" target="_blank" rel="noopener">Fonte: Mapa Abrecon</a></p>
+      </article>
+
+      <!-- 👇 ADICIONE MAIS PONTOS AQUI (copie/cole um <article> e edite os dados) -->
+      <!--
+      <article class="card">
+        <span class="chip">Tipo</span>
+        <h3>Nome do Ponto</h3>
+        <p class="meta">Endereço — Bairro, Cidade/UF</p>
+        <p class="muted">Regras/observações (ex.: aceita apenas óleo vegetal em PET).</p>
+        <p><a href="URL_DA_FONTE" target="_blank" rel="noopener">Fonte/Contato</a></p>
+      </article>
+      -->
+    </div>
+
+    <details class="card" style="margin-top:1rem">
+      <summary><strong>Lista estendida (editar conforme confirmar pontos)</strong></summary>
+      <div class="panel" style="margin-top:.75rem; padding:1rem; overflow:auto;">
+        <table aria-label="Tabela de pontos de coleta">
+          <thead>
+            <tr>
+              <th>Nome</th><th>Endereço</th><th>Bairro</th><th>Observações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Projeto Óleo do Bem</td>
+              <td>Locais variáveis</td>
+              <td>Sorocaba</td>
+              <td>Confirme no site oficial os PEVs ativos.</td>
+            </tr>
+            <tr>
+              <td>H2O Sustentável (coletas)</td>
+              <td>Agendamento</td>
+              <td>Sorocaba</td>
+              <td>Ver disponibilidade para residências.</td>
+            </tr>
+            <tr>
+              <td>Ecoponto Cajuru</td>
+              <td>R. Mário Monteiro de Carvalho, s/n</td>
+              <td>Cajuru</td>
+              <td>Confirmar se recebe óleo de cozinha.</td>
+            </tr>
+            <!-- 👇 ADICIONE MAIS LINHAS AQUI CONFORME CONFIRMAÇÃO -->
+          </tbody>
+        </table>
+      </div>
+    </details>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section id="como-funciona" class="wrap">
+    <p class="stitle">Passo a passo</p>
+    <h2 class="shead">Como armazenar e descartar o óleo usado</h2>
+    <div class="panel card">
+      <ol class="steps">
+        <li>Espere o óleo esfriar após o uso. Nunca manipule quente.</li>
+        <li>Coe (opcional) e transfira com funil para garrafa PET limpa e seca.</li>
+        <li>Feche bem, identifique o frasco e guarde em local seguro.</li>
+        <li>Leve a um <a href="#pontos">ponto de coleta</a> cadastrado.</li>
+      </ol>
+      <p class="hint">Cada litro de óleo pode contaminar até <strong>25 mil litros</strong> de água.</p>
+    </div>
+  </section>
+
+  <!-- FORMULÁRIO DEMO -->
+  <section id="indicar" class="wrap">
+    <p class="stitle">Participação</p>
+    <h2 class="shead">Indicar novo ponto</h2>
+    <div class="panel card">
+      <form>
+        <div class="row">
+          <div>
+            <label for="nome">Nome do local</label>
+            <input id="nome" name="nome" required placeholder="Ex.: Mercado Bom Preço">
+          </div>
+          <div>
+            <label for="contato">Contato</label>
+            <input id="contato" name="contato" placeholder="Telefone ou e-mail">
+          </div>
+        </div>
+        <label for="endereco">Endereço completo</label>
+        <input id="endereco" name="endereco" required placeholder="Rua, número, bairro, cidade" />
+        <div class="row">
+          <div>
+            <label for="horario">Horário de atendimento</label>
+            <input id="horario" name="horario" placeholder="Ex.: Seg–Sex, 9h–18h" />
+          </div>
+          <div>
+            <label for="aceita">O que aceita</label>
+            <select id="aceita" name="aceita">
+              <option>Óleo de cozinha</option>
+              <option>Óleo e gordura vegetal</option>
+              <option>Óleo em grandes volumes</option>
+            </select>
+          </div>
+        </div>
+        <label for="obs">Observações</label>
+        <textarea id="obs" name="obs" placeholder="Regras, limites de volume, benefícios ao doador..."></textarea>
+        <button class="submit" type="submit">Enviar indicação</button>
+        <p class="hint">* Formulário demonstrativo (HTML + CSS). Para salvar, conecte a um backend.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="wrap">
+    <p class="stitle">Perguntas frequentes</p>
+    <h2 class="shead">Dúvidas comuns</h2>
+    <div class="grid cols-2">
+      <article class="card">
+        <h3>Posso jogar óleo na pia?</h3>
+        <p class="muted">Não. O óleo endurece nas tubulações, causa entupimentos e polui a água. Leve sempre a um ponto de coleta.</p>
+      </article>
+      <article class="card">
+        <h3>Que tipo de óleo é aceito?</h3>
+        <p class="muted">Geralmente, óleo vegetal usado em frituras (soja, milho, canola, girassol). Pontos podem ter regras específicas — verifique antes.</p>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>♻️ Projeto educativo — HTML + CSS puro. Você pode adaptar para sua cidade.</p>
+    <p>Contato: <a href="mailto:contato@coletadeoleo.org">contato@coletadeoleo.org</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

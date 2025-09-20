@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pontos de Coleta de Óleo</title>
+  <meta name="description" content="Encontre pontos de coleta de óleo de cozinha usado e saiba como descartar corretamente." />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top">
+      <span class="logo" aria-hidden="true">♻️</span>
+      <span>Coleta de Óleo</span>
+    </a>
+    <nav class="menu">
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#pontos">Pontos</a>
+      <a href="#mapa">Mapa</a>
+      <a href="#indicar">Indicar ponto</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="cta" href="#pontos">Encontrar ponto</a>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero wrap">
+    <h1>Descartar corretamente o óleo usado é simples e faz toda a diferença</h1>
+    <p>Encontre pontos de coleta próximos, aprenda a armazenar o óleo de cozinha usado e ajude a evitar a poluição da água e do solo.</p>
+    <div class="actions">
+      <a class="ghost" href="#como-funciona">Como guardar o óleo?</a>
+    </div>
+  </section>
+
+  <!-- MAPA (sempre visível logo após o hero) -->
+  <section id="mapa" class="wrap">
+    <p class="stitle">Localização</p>
+    <h2 class="shead">Mapa de pontos de coleta</h2>
+    <iframe class="map" loading="lazy" title="Mapa OpenStreetMap"
+      src="https://www.openstreetmap.org/export/embed.html?bbox=-46.738%2C-23.705%2C-46.392%2C-23.460&layer=mapnik&marker=-23.5505%2C-46.6333"></iframe>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section id="como-funciona" class="wrap">
+    <p class="stitle">Passo a passo</p>
+    <h2 class="shead">Como armazenar e descartar o óleo usado</h2>
+    <div class="panel card">
+      <ol class="steps">
+        <li>Espere o óleo esfriar após o uso.</li>
+        <li>Transfira para garrafa PET limpa.</li>
+        <li>Feche bem e guarde em local seguro.</li>
+        <li>Leve a um <a href="#pontos">ponto de coleta</a> cadastrado.</li>
+      </ol>
+      <p class="hint">Cada litro de óleo pode contaminar até <strong>25 mil litros</strong> de água.</p>
+    </div>
+  </section>
+
+  <!-- PONTOS -->
+  <section id="pontos" class="wrap">
+    <p class="stitle">Pontos de coleta</p>
+    <h2 class="shead">Locais parceiros</h2>
+    <div class="grid cols-3">
+      <article class="card">
+        <span class="chip">Gratuito</span>
+        <h3>Eco Posto Centro</h3>
+        <p class="meta">Rua das Flores, 120 — Centro</p>
+      </article>
+      <article class="card">
+        <span class="chip">Parceria</span>
+        <h3>Mercado Verde Norte</h3>
+        <p class="meta">Av. Brasil, 890 — Bairro Norte</p>
+      </article>
+      <article class="card">
+        <span class="chip">Gratuito</span>
+        <h3>Associação Recicla Mais</h3>
+        <p class="meta">R. das Mangueiras, 45 — Bairro Sul</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- FORMULÁRIO -->
+  <section id="indicar" class="wrap">
+    <p class="stitle">Participação</p>
+    <h2 class="shead">Indicar novo ponto</h2>
+    <div class="panel card">
+      <form>
+        <label for="nome">Nome do local</label>
+        <input id="nome" name="nome" required>
+        <label for="endereco">Endereço completo</label>
+        <input id="endereco" name="endereco" required>
+        <button class="submit" type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="wrap">
+    <p class="stitle">FAQ</p>
+    <h2 class="shead">Dúvidas comuns</h2>
+    <div class="grid cols-2">
+      <article class="card"><h3>Posso jogar óleo na pia?</h3><p class="muted">Não. Sempre leve a um ponto de coleta.</p></article>
+      <article class="card"><h3>Que tipo de óleo é aceito?</h3><p class="muted">Óleo vegetal de fritura.</p></article>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>♻️ Projeto educativo — HTML + CSS puro.</p>
+  </div>
+</footer>
+
+</body>
+</html>
