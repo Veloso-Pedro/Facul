@@ -7,10 +7,10 @@ public class Carros extends Veiculos {
     protected boolean freioABS;
     protected boolean kitCamera;
 
-    Carros(String modelo, String montadora, String placa, String ano, String cor, double valor, int qtdPortas, int potencia, String cambio, boolean freioABS, boolean kitCamera){
+    Carros(String modelo, String montadora, String placa, int ano, String cor, double valor, int qtdPortas, int potencia, String cambio, boolean freioABS, boolean kitCamera){
         super(modelo,montadora, placa, ano, cor, valor);
-        this.setQtdPortas(qtdPortas);
-        this.setPotencia(potencia);
+        this.validarPortas(this.setQtdPortas(qtdPortas));
+        this.validarPotencia(this.setPotencia(potencia));
         this.setCambio(cambio);
         this.setFreioABS(freioABS);
         this.setKitCamera(kitCamera);
@@ -18,7 +18,7 @@ public class Carros extends Veiculos {
     }
 
     //* Construtor Padrão
-    Carros(String modelo, String montadora, String placa, String ano, String cor, double valor, int qtdPortas, int potencia, String cambio){
+    Carros(String modelo, String montadora, String placa, int ano, String cor, double valor, int qtdPortas, int potencia, String cambio){
         this( modelo,  montadora, placa,  ano,  cor,  valor,  qtdPortas,  potencia,  cambio, false, false);
     }
 
@@ -38,6 +38,20 @@ public class Carros extends Veiculos {
             "Kit de Cameras: " + this.getKitCamera() + "\n"; 
 
 
+    }
+
+
+    public void validarPortas(int p){
+        
+        if (p > 4){
+            throw new IllegalArgumentException("O maximo de portas é quatro!");
+        }
+    }
+
+    public void validarPotencia(int p) {
+        if (p <= 0) {
+            throw new IllegalArgumentException("A potencia não pode ser neegativa! nem zero!");
+        }
     }
 
 
@@ -64,25 +78,26 @@ public class Carros extends Veiculos {
 
     //* Setters 
     public int setQtdPortas(int qtdPortas) {
-        
-        if (qtdPortas > 4){
-            throw new IllegalArgumentException("O maximo de portas é quatro!");
-        }
-        
         return this.qtdPortas = qtdPortas;
     }
 
     public int setPotencia(int potencia) {
-        
-        if (potencia <= 0) {
-            throw new IllegalArgumentException("A potencia não pode ser neegativa! nem zero!");
-        }
-        
         return this.potencia = potencia;
     }
 
     public void setCambio(String cambio) {
-        this.cambio = cambio.toUpperCase();
+        
+        if(cambio == null){
+            throw new IllegalArgumentException("Cambio não pode ser nulo!");
+        }
+
+        if(cambio.equalsIgnoreCase("Manual") || cambio.equalsIgnoreCase("Automatico")){
+            this.cambio = cambio.toUpperCase();
+        }else{
+            throw new IllegalArgumentException("Cambio só pode ser Manual ou Automatico!");
+        }
+        
+        
     }
 
     public void setFreioABS(boolean freioABS) {
