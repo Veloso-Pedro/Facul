@@ -5,7 +5,7 @@ public class Veiculos {
     protected String modelo;
     protected String montadora;
     protected String placa;
-    protected String ano;
+    protected int ano;
     protected String cor;
     protected double valor;
 
@@ -30,6 +30,10 @@ public class Veiculos {
             "Cor: " + this.getCor() + "\n" +
             "Valor: R$ " + String.format("%.2f",this.getValor()) +  "\n";
     }
+    
+
+    
+
 
     public boolean ValidarPlaca(String i){
         boolean placaValida = false;
@@ -56,7 +60,7 @@ public class Veiculos {
         return this.placa;
     }
 
-    public String getAno() {
+    public int getAno() {
         return this.ano;
     }
 
@@ -97,14 +101,36 @@ public class Veiculos {
     }
 
     public void setAno(int ano) {
+<<<<<<< HEAD
+=======
+        
+        if(ano < 1886){
+            throw new IllegalArgumentException("O primeiro carro surgiu em 1886");
+        }
+
+>>>>>>> 372b4dd4179acd9c80aaa47ddac86f01729ec42c
         this.ano = ano;
     }
 
     public void setCor(String cor) {
-        this.cor = cor;
+        
+        if(cor == null){
+            throw new IllegalArgumentException("Cor não pode ser nulo!");
+        }
+
+        if(cor.equalsIgnoreCase("Branco") || cor.equalsIgnoreCase("Prata") || cor.equalsIgnoreCase("Preto")){
+            this.cor = cor;
+        }else{
+            throw new IllegalArgumentException("Cor só pode ser Branco, Prata ou Preto");
+        }
+        
+       
     }
 
     public void setValor(double valor) {
+        
         this.valor = valor;
     }
+
+
 }
