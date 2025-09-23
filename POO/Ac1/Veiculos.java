@@ -4,7 +4,7 @@ package POO.Ac1;
 public class Veiculos {
     protected String modelo;
     protected String montadora;
-    protected String placa;
+    private String placa;
     protected int ano;
     protected String cor;
     protected double valor;
