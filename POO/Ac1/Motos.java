@@ -6,7 +6,7 @@ public class Motos extends Veiculos {
     protected boolean alarme = false;
     protected boolean bau = false;
 
-    Motos(String modelo, String montadora, String placa, String ano, String cor, double valor, int cilindradas, boolean protetorMotor, boolean alarme, boolean bau){
+    Motos(String modelo, String montadora, String placa, int ano, String cor, double valor, int cilindradas, boolean protetorMotor, boolean alarme, boolean bau){
         super(modelo,montadora, placa, ano, cor, valor);
         this.setCilindradas(cilindradas);
         this.setProtetorMotor(protetorMotor);
@@ -16,7 +16,7 @@ public class Motos extends Veiculos {
     }
 
     //* Construtor Padrão
-    Motos(String modelo, String montadora, String placa, String ano, String cor, double valor, int cilindradas){
+    Motos(String modelo, String montadora, String placa, int ano, String cor, double valor, int cilindradas){
         this( modelo,  montadora,  placa, ano, cor, valor, cilindradas, false, false, false);
     }
 
