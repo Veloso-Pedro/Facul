@@ -101,14 +101,10 @@ public class Veiculos {
     }
 
     public void setAno(int ano) {
-<<<<<<< HEAD
-=======
-        
         if(ano < 1886){
             throw new IllegalArgumentException("O primeiro carro surgiu em 1886");
         }
 
->>>>>>> 372b4dd4179acd9c80aaa47ddac86f01729ec42c
         this.ano = ano;
     }
 
