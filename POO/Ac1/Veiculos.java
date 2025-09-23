@@ -9,7 +9,7 @@ public class Veiculos {
     protected String cor;
     protected double valor;
 
-    Veiculos(String modelo, String montadora, String placa, String ano, String cor, double valor){
+    Veiculos(String modelo, String montadora, String placa, int ano, String cor, double valor){
         this.setModelo(modelo);
         this.setMontadora(montadora);
         this.ValidarPlaca(this.setPlaca(placa));
@@ -96,7 +96,7 @@ public class Veiculos {
         return this.placa = placa.toUpperCase();
     }
 
-    public void setAno(String ano) {
+    public void setAno(int ano) {
         this.ano = ano;
     }
 
